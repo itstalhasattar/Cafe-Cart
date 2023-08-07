@@ -1,55 +1,148 @@
-body {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    background-color: white;
-    width: 465px;
-    margin: 0 auto;
-    border: 3px solid black;
-    border-radius: 25px;
-/*    box-shadow: 5px 5px 0 0 aqua;*/
-    padding: 0 2em 1em;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+  background-color: #f0f0f0;
+}
+.main-section {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+  box-shadow: 0 4px 14px hsl(335deg 25% 15% / 10%);
+  margin-bottom: 2rem;
+  min-width: 370px;
+}
+
 header {
-	text-align: center;
-	border-bottom: 3px solid aqua;}
-h1 { 
-    font-size: 150%;
-    margin-bottom: .5em;
+  text-align: center;
+  border-bottom: 3px double black;
+}
+h1 {
+  font-size: 150%;
+  margin-bottom: 0.5em;
+}
+main {
+  display: flex;
+  width: 100%;
 }
 h2 {
-	font-size: 140%;
-	font-weight: 500;
-	margin-top: 0;
-	margin-bottom: .2em;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 0;
+  margin-bottom: 0.2em;
 }
 select {
-	width: 305px;
+  width: 100%;
 }
-#menu h2 {
-	padding-top: 1em;
+#menu {
+  width: 50%;
+  margin-left: 3rem;
+}
 
+#form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#menu h2 {
+  padding-top: 1em;
 }
 #menu p {
-	margin-top: 0;
-	margin-bottom: .7em;
+  margin-top: 0;
+  margin-bottom: 0.7em;
 }
 ul {
-	list-style-type: none;
-	padding-left: 0;
-	margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  align-items: center;
 }
 ul li {
-	display: inline;
-    padding: 5px 0 5px 0;
+  display: inline;
+}
+ul li img {
+  border-radius: 1rem;
+  margin: 0.2rem;
 }
 #total {
-	margin-top: .5em;
-	margin-bottom: .7em;
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
 }
+#order {
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+
+.orders-wrapper {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin-top: 1.2rem;
+  min-width: 250px;
+}
+
+option {
+  font-size: 0.9rem;
+  margin-block: 0.1rem;
+  letter-spacing: 1.6;
+}
+
 input {
-    width: 150px;
-    margin-right: 5px;
+  width: 150px;
+  margin-right: 5px;
+  padding-inline: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.9rem;
+  border: 1px solid black;
+  cursor: pointer;
 }
 #buttons {
-	margin-top: 0;
+  margin: 0;
+  margin-left: 8px;
 }
+
+#total {
+  margin-left: 8px;
+  color: #46237A;
+}
+.checkout-form {
+  margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu {
+    margin: 0;
+    padding: 0;
+  }
+  form {
+    text-align: center;
+  }
+  input {
+    margin-block: 0.5em;
+  }
+  ul li img {
+    margin: 0 auto;
+  }
+}
+
+

@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Tuxedo Cat Coffee</title>
-    <link type="text/css" rel="stylesheet" href="cafe.css">
-</head>
-<body>
-    <header>
-        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
-    </header>
-    <main>
-        <form id="order_form" name="order_form" action="checkout.html" method="get">
-            <h1>Thank you!</h1>
-            <p>Thank you for visiting Tuxedo Cat Coffee.</p>   
-            <br>
-            <a href="index.html">Place another order</a>
-        </form>
-    </main> 
-</body>
+    <link type="text/css" rel="stylesheet" href="cafe.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-section">
+      <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee" />
+      </header>
+      <main>
+        <div class="checkout-form">
+          <form
+            id="order_form_checkout"
+            name="order_form"
+            action="index.html"
+            method="get"
+          >
+            <h1 style="color: #46237A;">Thank you!</h1>
+            <p>Thank you for visiting Tuxedo Cat Coffee.</p>
+            <br />
+            <input type="Submit" value="Place another order" />
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

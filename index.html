@@ -1,47 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Tuxedo Cat Coffee</title>
-    <link type="text/css" rel="stylesheet" href="cafe.css">
+    <link type="text/css" rel="stylesheet" href="cafe.css" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-    <header>
-        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
-    </header>
-    <main>
-        <form id="order_form" name="order_form" action="checkout.html" method="get">
-            <section id="menu">
-            	<h2>Menu</h2>
-            	<p>Click an item to add it to your order.</p>
-            	<ul class="menu-items">
-            		<li><a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="espresso"/></a></li>
-            		<li><a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="latte"/></a></li>
-            		<li><a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="cappuccino"/></a></li>
-            		<li><a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="coffee"/></a></li>
-            		<li><a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="biscotti"/></a></li>
-            		<li><a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="scone"/></a></li>
-            	</ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-section">
+      <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee" />
+      </header>
+      <main>
+        <section id="menu">
+          <h2>Menu</h2>
+          <p>Click an item to add it to your order.</p>
+          <ul class="menu-items">
+            <li>
+              <a href="#"
+                ><img
+                  id="images/espresso_info.jpg"
+                  src="images/espresso.jpg"
+                  alt="espresso"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  id="images/latte_info.jpg"
+                  src="images/latte.jpg"
+                  alt="latte"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  id="images/cappuccino_info.jpg"
+                  src="images/cappuccino.jpg"
+                  alt="cappuccino"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  id="images/coffee_info.jpg"
+                  src="images/coffee.jpg"
+                  alt="coffee"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  id="images/biscotti_info.jpg"
+                  src="images/biscotti.jpg"
+                  alt="biscotti"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  id="images/scone_info.jpg"
+                  src="images/scone.jpg"
+                  alt="scone"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section id="form">
+          <form
+            id="order_form"
+            name="order_form"
+            action="/checkout.html"
+            method="get"
+          >
+            <section class="form-fields">
+              <h2>Your Order</h2>
+              <section class="order-list">
+                <div class="orders-wrapper">
+                  <select id="order" name="order" size="7"></select>
+                </div>
+
+                <p id="total"></p>
+              </section>
+              <section id="buttons">
+                <input
+                  type="submit"
+                  name="place_order"
+                  id="place_order"
+                  value="Place Order"
+                />
+                <input
+                  type="button"
+                  name="clear_order"
+                  id="clear_order"
+                  value="Clear Order"
+                  class=""
+                />
+              </section>
             </section>
-
-            <section>
-            	<h2>Your Order</h2>
-            	<section>
-            		<select id="order" name="order" size="6">
-						
-            		</select>
-            		<p id="total"></p>            		
-           		</section>
-            	<section id="buttons">
-           			<input type="button" name="place_order" id="place_order" value="Place Order">
-           			<input type="button" name="clear_order" id="clear_order" value="Clear Order">				            		
-            	</section>
-            </section>   
-
-
-
-        </form>
-    </main> 
-	<script src="script.js"></script>
-</body>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
