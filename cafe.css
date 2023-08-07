@@ -14,10 +14,10 @@ body {
   background-color: white;
   border-radius: 1rem;
   padding: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding-bottom: 4rem;
   box-shadow: 0 4px 14px hsl(335deg 25% 15% / 10%);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-width: 370px;
 }
 
